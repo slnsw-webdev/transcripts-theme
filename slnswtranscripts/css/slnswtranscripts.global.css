@@ -1,0 +1,122 @@
+/* Global element styles and classes, reset additions and changes
+***********************************************************************/
+
+html {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 100%;
+}
+
+body {
+	font-size: 1rem;
+	color: #000;
+	overflow-x: hidden;
+}
+
+strong {
+	font-weight: bold;
+}
+
+input {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: .75rem;
+}
+
+select {
+	box-sizing: content-box;
+	border: 0;
+	padding: 0;
+}
+
+input[type="submit"] {
+	box-sizing: content-box;
+	cursor: pointer;
+}
+
+input[type="text"] {
+	border: 0;
+	padding: 0;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #6d6d6d;
+	color: #fff;
+	text-indent: 1rem;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+   color: #fff;
+   opacity: 1;
+}
+
+input[type="text"]:-moz-placeholder {
+   color: #fff;
+   opacity: 1;
+}
+
+input[type="text"]::-moz-placeholder {
+   color: #fff;
+   opacity: 1;
+}
+
+input[type="text"]:-ms-input-placeholder {  
+  color: #fff;
+  opacity: 1;
+}
+
+.clearing {
+	clear: both;
+}
+
+.smallish {
+	display: none;
+}
+
+.mediumish {
+	display: none;
+}
+
+.largish {
+	display: block;
+}
+
+.button {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: .875rem;
+	color: #fff;
+	background-color: #0059be;
+}
+
+.inner-wrapper {
+	margin: 0 auto;
+	max-width: 1120px;
+}
+
+@media all and (max-width: 78em) {
+	.largish {
+		display: none;
+	}
+	
+	.smallish {
+		display: none;
+	}
+	
+	.mediumish {
+		display: block;
+	}
+}
+
+@media all and (max-width: 40em) {
+	.largish {
+		display: none;
+	}
+	
+	.mediumish {
+		display: none;
+	}
+	
+	.smallish {
+		display: block;
+	}
+}

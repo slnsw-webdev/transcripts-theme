@@ -1,0 +1,81 @@
+/* styles specific to slnswtranscripts-1col layout ************************
+****************************************************************/
+
+.panel-slnswtranscripts-1col-header {
+	width: 100%;
+	position: relative;
+}
+
+.panel-slnswtranscripts-1col-title-strip {
+	background-color: #f8f8f8;
+}
+
+.panel-slnswtranscripts-1col-title-strip  h1 {
+	margin: 0 auto;
+	max-width: 1120px;
+	font-family: Georgia,Times,Times New Roman,serif;
+	font-size: 1.5rem;
+	font-style: italic;
+	color: #000;
+	line-height: 3.625rem;
+}
+
+.panel-slnswtranscripts-1col-main {
+	margin: 1.75rem auto;
+	max-width: 1120px;
+}
+
+.panel-slnswtranscripts-1col-contact-strip {
+	clear: both;
+	padding: 1%;
+	width: 98%;
+	background-color: #f9f9f9;
+}
+
+.panel-slnswtranscripts-1col-contact-strip-col-1 {
+	float: left;
+	width: 48%;
+}
+
+.panel-slnswtranscripts-1col-contact-strip-col-2 {
+	float: right;
+	width: 40%;
+	max-width: 28rem;
+}
+
+.panel-slnswtranscripts-1col-footer {
+	clear: both;
+	width: 100%;
+}
+
+@media all and (max-width: 78em) {
+	.panel-slnswtranscripts-1col-main  {
+		margin-top: 0;
+	}
+}
+
+@media all and (max-width: 40em) {
+	.panel-slnswtranscripts-1col-main {
+		margin: 0 auto;
+		width: 94%;
+	}
+	
+	.panel-slnswtranscripts-1col-contact-strip {
+		padding: 0;
+		width: 100%;
+	}
+
+	.panel-slnswtranscripts-1col-contact-strip-col-1 {
+		float: none;
+		margin: 0 auto;
+		border-bottom: 1px solid #d8d8d8;
+		width: 94%;
+	}
+
+	.panel-slnswtranscripts-1col-contact-strip-col-2 {
+		float: none;
+		margin: 0 auto;
+		width: 94%;
+		max-width: 94%;
+	}
+}

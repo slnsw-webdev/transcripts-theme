@@ -1,0 +1,26 @@
+name = State Library Transcripts
+description = A custom theme for State Library Transcripts
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/slnswtranscripts.reset.css
+stylesheets[all][] = css/slnswtranscripts.global.css
+stylesheets[all][] = css/slnswtranscripts.common.css
+stylesheets[all][] = css/slnswtranscripts.page.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/slnswtranscripts.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[content] = Content
+
+; ========================================
+; Enable Panels layouts. Panel layouts go under the "panel_layouts" folder.
+; ========================================
+plugins[panels][layouts] = panel_layouts

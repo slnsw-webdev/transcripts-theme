@@ -1,0 +1,554 @@
+/* Styles for markup used on all pages *******************************
+***********************************************************************/
+#page-wrapper {
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#page-wrapper.show-nav #page-canvas {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+#page-canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+#page-wrapper #page-canvas > nav.main-menu {
+	position: absolute;
+    top: 0;
+    left: -300px;
+	width: 300px;
+    height: 100%;
+	background-color: #3b3b3b;
+	color: #fff;
+}
+
+#page-wrapper #page-canvas > nav.main-menu .account-links {
+	padding: 4%;
+	color: #fff;
+	font-size: .75rem;
+}
+
+#page-wrapper #page-canvas > nav.main-menu .account-links a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#page-wrapper #page-canvas > nav.main-menu form {
+	border-bottom: 1px solid #6d6d6d;
+	padding: 0 4% 6% 4%;
+}
+
+#page-wrapper #page-canvas > nav.main-menu input[type="text"] {
+	width: 70%;
+	font-style: italic;
+}
+
+#page-wrapper #page-canvas > nav.main-menu input[type="text"]::-webkit-input-placeholder {
+	font-style: italic;
+}
+
+#page-wrapper #page-canvas > nav.main-menu input[type="text"]:-moz-placeholder {
+	font-style: italic;
+}
+
+#page-wrapper #page-canvas > nav.main-menu input[type="text"]::-moz-placeholder {
+	font-style: italic;
+}
+
+#page-wrapper #page-canvas > nav.main-menu input[type="text"]:-ms-input-placeholder {  
+	font-style: italic;
+}
+
+#page-wrapper #page-canvas > nav.main-menu input[type="image"] {
+	margin-left: 4%;
+	vertical-align: middle;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li {
+	border-bottom: 1px solid #6d6d6d;
+	margin: 0;
+	padding: 0;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: .875rem;
+	line-height: 3rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li a {
+	display: inline-block;
+	margin-left: 4%;
+	width: 80%;
+	color: #fff;
+	text-decoration: none;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li:hover {
+	background-color: #00cc99;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul  li img {
+	margin: 0 5%;
+	width: 6%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li ul {
+	overflow: hidden;
+	max-height: 0;
+	background-color: #5f5f5f;
+	-webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li ul.active {
+	max-height: 25rem;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li ul li:last-of-type {
+	border-bottom: none;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li ul li a {
+	display: inline-block;
+	margin: 0;
+	padding: 0 4% 0 12%;
+	width: 84%;
+	color: #fff;
+	text-decoration: none;
+}
+
+#page-wrapper #page-canvas > nav.main-menu ul li ul li a:hover {
+	background-color: #00cc99;
+}
+
+#page-wrapper #page-canvas > nav .social {
+	padding: 4%;
+}
+
+#page-wrapper #page-canvas > nav .social img {
+	margin-right: .3rem;
+}
+
+#page-wrapper #page-canvas > header {
+	height: 6.125rem;
+	background: url(../images/banner-transcription.jpg) left top no-repeat;
+	background-size: cover;
+}
+
+#page-wrapper #page-canvas  #main-menu-trigger {
+	float: left;
+	padding: 0 1rem;
+	background-color: #000;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	color: #fff;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: .875rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#page-wrapper #page-canvas  #main-menu-trigger img {
+	padding-right: .7rem;
+	vertical-align: middle;
+}
+
+#page-wrapper #page-canvas > header .logo-slnsw {
+	float: right;
+	width: 7.25rem;
+}
+
+#page-wrapper #page-canvas > header h1 {
+	float: left;
+	padding: 0 1rem;
+	font-family: Georgia,Times,Times New Roman,serif;
+	font-size: 1.5rem;
+	background-color: #fff;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+#page-wrapper #page-canvas > header h1 a {
+	display: block;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	color: #000;
+	text-decoration: none;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+#page-wrapper #page-canvas > header h1:hover {
+	background-color: #00cc99;
+}
+
+#page-wrapper #page-canvas > header h1:hover a {
+	color: #fff;
+}
+
+.staff-pick {
+	width: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.staff-pick  .col1{
+	float: left;
+	margin-right: 2%;
+	width: 24%;
+}
+
+.staff-pick .col1  h1 {
+	font-family: Georgia,Times,Times New Roman,serif;
+	font-size: 1.5rem;
+	color: #1e1e1e;
+	font-style: italic;
+}
+
+.staff-pick  .col1 img {
+	margin-top: 0.875rem;
+	width: 100%;
+	max-width: 13.25rem;
+}
+
+.staff-pick  .col2 {
+	padding-top: 2.5rem;
+} 
+
+.staff-pick  .col2 h2 {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	font-size: 1.125rem;
+}
+
+.staff-pick  .col2 {
+	font-size: .75rem;
+	line-height: 1.5;
+}
+
+.staff-pick  .col2 a {
+	color: #1e1e1e;
+	font-weight: bold;
+}
+
+.contact-us {
+	width: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.contact-us .col1 {
+	float: left;
+	margin-right: 4%;
+	width: 52%;
+}
+
+.contact-us .col1  h1 {
+	font-family: Georgia,Times,Times New Roman,serif;
+	font-size: 1.5rem;
+	color: #1e1e1e;
+	font-style: italic;
+}
+
+.contact-us .col1 a {
+	display: block;
+	margin-top: 1.2rem;
+	padding: 0 10%;
+	width: 80%;
+	height: 4.125rem;
+	line-height: 4.125rem;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	color: #1e1e1e;
+	background-color: #e3e3e3;
+}
+
+.contact-us .col1 a:hover {
+	background-color: #00cc99;
+}
+
+.contact-us .col2 {
+	float: right;
+	padding-top: 2.5rem;
+	width: 44%;
+	font-size: .8125rem;
+	line-height: 1.2;
+}
+
+.contact-us .col2 p {
+	margin-bottom: 1rem;
+}
+
+.contact-us .col2 a {
+	color: #1e1e1e;
+	text-decoration: none;
+}
+
+#page-wrapper #page-canvas > footer {
+	padding: 1%;
+	width: 98%;
+	background-color: #e3e3e3;
+	color: #313131;
+	font-size: .75rem;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#page-wrapper #page-canvas > footer .col1 {
+	float: left;
+	padding-top: 1rem;
+	width: 65%;
+	line-height: 1rem;
+}
+
+#page-wrapper #page-canvas > footer .col2 {
+	float: right;
+	width: 35%;
+	text-align: right;
+}
+
+#page-wrapper #page-canvas > footer .col2 img {
+	margin-left: .5rem;
+}
+
+#page-wrapper #page-canvas > footer a {
+	color: #313131;
+	text-decoration: none;
+}
+
+@media all and (max-width: 78em) {
+	.staff-pick  .col1 {
+		margin-right: 2%;
+		width: 40%;
+	}
+
+	.staff-pick  .col2 {
+		font-size: .625rem;
+	}
+	
+	.contact-us .col1 a {
+		height: 3rem;
+		line-height: 3rem;
+		font-size: .75rem;
+	}
+	
+	.contact-us .col2 {
+		font-size: .625rem;
+	}
+	
+	.contact-us .col2 p {
+		margin-bottom: .8rem;
+	}
+}
+
+@media all and (max-width: 40em) {
+	#page-wrapper #page-canvas > header {
+		height: 6.5rem;
+	}
+
+	#page-wrapper #page-canvas  #main-menu-trigger {
+		padding: 0 .5rem;
+		width: 7rem;
+		height: 2.25rem;
+		line-height: 2.25rem;
+		text-align: center;
+	}
+	
+	#page-wrapper #page-canvas > header .logo-slnsw {
+		width: 5.5rem;
+	}
+	
+	#page-wrapper #page-canvas > header h1 {
+		clear: left;
+		padding: 0 .5rem;
+		font-size: .875rem;
+		width: 7rem;
+		text-align: center;
+	}
+	
+	#page-wrapper #page-canvas > header h1 a {
+		height: 2.25rem;
+		line-height: 2.25rem;
+	}
+
+	.contact-us .col1 {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	.contact-us .col2 {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.staff-pick {
+		padding: 1rem 0;
+	}
+	
+	.staff-pick .col1 h1 {
+		font-size: .875rem;
+	}
+	
+	.staff-pick .col2 {
+		padding-top: 2rem;
+	}
+	
+	.staff-pick .col2 h2 {
+		font-size: .6875rem;
+	}
+	
+	.contact-us {
+		padding: 1rem 0;
+	}
+	
+	.contact-us .col1 h1 {
+		font-size: .875rem;
+	}
+	
+	.contact-us .col1 a {
+		float: left;
+		margin: .5rem 0;
+		padding: 0;
+		width: 48%;
+	}
+	
+	.contact-us .col1 a:first-of-type {
+		margin-right: 4%;
+	}
+	
+	.contact-us .col2 > div {
+		float: left;
+		width: 52%;
+	}
+	
+	.contact-us .col2 p.media-enquiries {
+		float: left;
+		width: 48%;
+	}
+	
+	.contact-us .col2 p {
+		margin-bottom: .5rem;
+	}
+	
+	#page-wrapper #page-canvas > footer {
+		font-size: .625rem;
+	}
+	
+	#page-wrapper #page-canvas > footer .col1 {
+		padding-top: 0;
+		width: 100%;
+	}
+	
+	#page-wrapper #page-canvas > footer .col2 {
+		clear: left;
+		width: 100%;
+	}
+	
+	#page-wrapper #page-canvas > footer .col2 img {
+		width: 1.625rem;
+	}
+}
+
+
+/* Styles for markup used on some pages *******************************
+***********************************************************************/
+#page-wrapper #page-canvas > header ul.menu {
+	float: right;
+	margin: .7rem 1rem;
+	padding: 0 .5rem;
+	background-color: #f9f9f9;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 2rem;
+}
+
+#page-wrapper #page-canvas > header ul.menu li {
+	display: inline;
+}
+
+#page-wrapper #page-canvas > header ul.menu a {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #1e1e1e;
+	font-size: .875rem;
+	text-decoration: none;
+}
+
+.easy-breadcrumb {
+	margin: 0 auto;
+	padding-top: 4rem;
+	max-width: 1120px;
+	font-size: .65rem;
+}
+
+.easy-breadcrumb .easy-breadcrumb_segment {
+	float: left;
+	margin-left: -1rem;
+	padding: 0 .5rem 0 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	background-color: #ffffff;
+	color: #2f2f2f;
+	text-decoration: none;
+}
+
+.easy-breadcrumb .easy-breadcrumb_segment-front {
+	float: left;
+	margin: 0;
+	padding: 0 .5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	background-color: #2f2f2f;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.easy-breadcrumb  .easy-breadcrumb_segment-separator {
+	position: relative;
+	float: left;
+	width: 1rem;
+	height: 1.5rem;
+	z-index: 10;
+	background: url(../images/crumb-segment.png) left top no-repeat;
+	background-size: auto 100%;
+}
+
+.easy-breadcrumb span:first-of-type {
+	background: url(../images/crumb-front.png) left top no-repeat;
+	background-size: auto 100%;
+}
+
+@media all and (max-width: 78em) {
+	
+}
+
+@media all and (max-width: 40em) {
+	#page-wrapper #page-canvas > header .account-links {
+		display: none;
+	}
+	
+	.easy-breadcrumb  {
+		display: none;
+	}
+}
