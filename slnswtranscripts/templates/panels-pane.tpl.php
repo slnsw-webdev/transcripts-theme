@@ -17,4 +17,6 @@
  *   data including the contexts and all of the other panes being displayed.
  */
 ?>
-<?php print render($content); ?>
+<div class="<?php print $classes; ?>" <?php print $id; ?> <?php print $attributes; ?>>
+  <?php print render($content); ?>
+</div>

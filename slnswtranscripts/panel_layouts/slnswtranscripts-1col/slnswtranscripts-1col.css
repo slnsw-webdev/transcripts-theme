@@ -50,13 +50,26 @@
 
 @media all and (max-width: 78em) {
 	.panel-slnswtranscripts-1col-main  {
-		margin-top: 0;
+		margin: 1.75rem auto;
+		width: 98%;
+	}
+	
+	.panel-slnswtranscripts-1col-title-strip  h1 {
+		margin: 0 auto;
+		width: 98%;
+	}
+}
+
+@media all and (max-width: 50em) {
+	.panel-slnswtranscripts-1col-title-strip  h1 {
+		font-size: 1rem;
+		line-height: 2rem;
 	}
 }
 
 @media all and (max-width: 40em) {
 	.panel-slnswtranscripts-1col-main {
-		margin: 0 auto;
+		margin: 1rem auto;
 		width: 94%;
 	}
 	
