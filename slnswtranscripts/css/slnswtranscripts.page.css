@@ -3,6 +3,43 @@
 body.front .easy-breadcrumb {
 	display: none;
 }
+
+body.front .join-us {
+	float: right;
+	margin-left: 1rem;
+	border: 1px solid #cfcfcf;
+	padding: .5rem;
+	width: 17rem;
+	background-color: #f8f8f8;
+}
+
+body.front .join-us h1 {
+	margin-bottom: 1rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+body.front .join-us p {
+	margin-bottom: 1rem;
+	font-size: .875rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+
+body.front .join-us a {
+	display: inline-block;
+	padding: .8rem .5rem;
+	color: #fff;
+	background-color: #0059be;
+	text-decoration: none;
+	font-size: .875rem;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
 body.front .view-project-list {
 	border-width: 1px 0;
 	border-style: solid;
@@ -61,6 +98,43 @@ body.page-project .view-documents-by-taxonomy {
 	border-top: 1px solid #d8d8d8;
 }
 
+body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widgets {
+	margin-bottom: 1rem;
+}
+
+body.page-project .view-documents-by-taxonomy .view-filters label {
+	text-transform: uppercase;
+	line-height: 1.5rem;
+}
+
+body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widget {
+	float: none;
+	display: inline-block;
+	margin-right: 1rem;
+	padding: 0;
+	width: 14rem;
+}
+
+body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widget.views-submit-button {
+	width: 1.5rem;
+}
+
+body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widget input[type="text"] {
+	width: 100%;
+}
+
+body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widget select {
+	width: 100%;
+}
+
+body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widget input.form-submit {
+	margin: 0;
+	padding: 0;
+	width: 1.5rem;
+	background: url(../images/icon-magnify-dark.png) center center no-repeat;
+	text-indent: -999rem;
+}
+
 body.page-project .view-documents-by-taxonomy .views-row {
 	float: left;
 	margin: 0 3% 1% 0;
@@ -81,7 +155,7 @@ body.page-project .view-documents-by-taxonomy .views-row img{
 	width: 100%;
 }
 
-body.page-project .view-documents-by-taxonomy .views-row a {
+body.page-project .view-documents-by-taxonomy .views-row .views-field-title a {
 	display: block;
 	padding: .5rem;
 	font-size: .8125rem;
@@ -89,6 +163,30 @@ body.page-project .view-documents-by-taxonomy .views-row a {
 	color: #000;
 	line-height: 1.3;
 	text-decoration: none;
+}
+
+body.page-project .view-documents-by-taxonomy .views-row .views-field-field-pages-completed {
+	padding: .5rem;
+	color: #0059be;
+	font-weight: bold;
+	font-size: .875rem;
+	text-transform: uppercase;
+}
+
+body.page-project-rediscovering-indigenous-langauges #page-wrapper #page-canvas > header {
+	background: url(../images/banner-indigenous.jpg) left top no-repeat;
+	background-size: cover;
+}
+
+body.node-type-transcipt-document .details {
+	border-bottom: 1px solid #cfcfcf;
+	padding-bottom: 1rem;
+	line-height: 1.4;
+	font-size: .875rem;
+}
+
+body.node-type-transcipt-document .details p {
+	margin-bottom: .5rem;
 }
 
 body.node-type-transcipt-document .view-transcript-page-view .item-list li{
@@ -109,8 +207,18 @@ body.node-type-transcipt-document .view-transcript-page-view .item-list li .page
 	font-size: .8125rem;
 	font-weight: bold;
 	color: #000;
-	line-height: 1.3;
+	line-height: 1;
 	text-decoration: none;
+}
+
+body.node-type-transcipt-document .view-transcript-page-view .item-list li .status{
+	display: block;
+	padding: 0 .5rem .5rem .5rem;
+	font-size: .8125rem;
+	font-weight: bold;
+	line-height: 1;
+	color: #0059be;
+	text-transform: uppercase;
 }
 
 body.page-page-view .page-number {
@@ -122,6 +230,39 @@ body.page-page-view .page-number {
 body.page-page-view .viewer {
 	border: 1px solid #d8d8d8;
 	background-color: #fbfbfb;
+	height: 43rem !important;
+}
+
+body.page-page-view .field-name-field-transcription {
+	border: 1px solid #d8d8d8;
+}
+
+body.page-page-view .field-name-field-transcription .field-label {
+	padding: 1rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
+}
+
+body.page-page-view .field-name-field-transcription .field-items {
+	padding: 1rem;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 1.4;
+	font-size: .8125rem;
+}
+
+body.page-page-view .field-name-field-transcription .field-items p {
+	margin-bottom: 1rem;
+}
+
+body.page-page-view  .field-name-field-page-completed {
+	margin-top: 1rem;
+	font-size: .875rem;
+}
+
+body.page-page-view  .field-name-field-page-completed .field-label {
+	color: #fb3333;
 }
 
 body.page-page-edit .page-number {
@@ -130,22 +271,217 @@ body.page-page-edit .page-number {
 	color: #ea7109;
 }
 
+body.page-page-edit .field-name-field-transcript-image .field-label {
+	display: none
+}
+
 body.page-page-edit .viewer {
 	border: 1px solid #d8d8d8;
 	background-color: #fbfbfb;
+	height: 43rem !important;
 }
 
-body.page-page-edit .field-label {
-	display: none;
+body.page-page-edit .field-name-field-transcription {
+	border: 1px solid #d8d8d8;
+	border-top: 0;
+}
+
+body.page-page-edit .field-name-field-transcription label {
+	padding: 1rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
+}
+
+body.page-page-edit .field-name-field-transcription .field-items {
+	padding: 1rem;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 1.4;
+	font-size: .8125rem;
+}
+
+body.page-page-edit .field-name-field-transcription .field-items p {
+	margin-bottom: 1rem;
+}
+
+body.page-page-edit  .field-name-field-page-completed {
+	margin-top: 1rem;
+	font-size: .875rem;
+}
+
+body.page-page-edit  .field-name-field-page-completed label, body.page-page-edit  .field-name-field-status  .field-label {
+	display: inline;
+	color: #fb3333;
+	font-weight: bold;
+}
+
+body.page-page-edit  .field-name-field-status  .field-items, body.page-page-edit  .field-name-field-status  .field-items div {
+	display: inline;
+}
+
+body.page-page-edit .wysiwyg-toggle-wrapper a {
+	display: block;
+	padding: 1rem;
+	color: #0059be;
+}
+
+body.page-page-edit input[type="submit"] {
+	float: right;
+	background: #0059be;
+	color: #fff;
+	font-weight: bold;
+}
+
+body.page-user-register label {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+body.page-user-register input, body.page-user-register select {
+	max-width: 100%;
+}
+
+body.page-user-register input[type="submit"] {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+body.page-user .profile .field-label, body.page-user .profile  h3 {
+	margin: 1rem 0;
+	padding: 1rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #000;
+}
+
+body.page-user .profile  a {
+	color: #0059be;
+	text-decoration: none;
+}
+
+body.page-messages  table th {
+	padding: .5rem;
+	font-weight: bold;
+}
+
+body.page-messages  table td {
+	padding: .5rem;
+}
+
+body.page-messages  table  a {
+	color: #0059be;
+	text-decoration: none;
+}
+
+body.page-dashboard a {
+	color: #0059be;
+	text-decoration: none;
+}
+
+body.page-dashboard #homebox .homebox-column {
+	background: #f8f8f8;
+}
+
+body.page-dashboard #homebox  .portlet-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+}
+
+body.page-forum a {
+	color: #0059be;
+	text-decoration: none;
+}
+
+body.page-forum   table th {
+	padding: .5rem;
+	font-weight: bold;
+}
+
+body.page-forum  table td {
+	padding: .5rem;
+}
+
+body.node-type-basic-page .content {
+	line-height: 1.4;
+}
+
+body.node-type-basic-page .content  h1 {
+	margin-bottom: 1rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+body.node-type-basic-page .content  p {
+	margin-bottom: 1rem;
+}
+
+body.node-type-basic-page .content  ul {
+	margin-bottom: 1rem;
+	list-style-type: disc;
+}
+
+body.node-type-basic-page .content  li {
+	margin-left: 2rem;
+}
+
+body.node-type-basic-page .content  a {
+	color: #0059be;
+}
+
+body.page-search .pane-page-content {
+	line-height: 1.4;
+}
+
+body.page-search .pane-page-content  a {
+	color: #0059be;
+	text-decoration: none;
 }
 
 @media all and (max-width: 78em) {
 	body.front .view-project-list .views-row {
 		width: 40%;
 	}
+	
+	body.node-type-transcipt-document .view-transcript-page-view .item-list li{
+		margin: 2% 2% 0 0;
+		width: 30%;
+	}
+	
+	body.page-page-view .viewer {
+		height: 30rem !important;
+	}
+	
+	body.page-page-edit .viewer {
+		height: 30rem !important;
+	}
+}
+
+@media all and (max-width: 50em) {
+	body.front .join-us {
+		width: 12rem;
+	}
+	body.front .join-us h1 {
+		font-size: .875rem;
+	}
+
+	body.front .join-us p {
+		font-size: .75rem;
+	}
+
+	body.front .join-us a {
+		font-size: .75rem;
+	}
 }
 
 @media all and (max-width: 40em) {
+	body.front .join-us {
+		display: none;
+	}
+	
 	body.front .view-project-list .view-header h2 {
 		font-size: 1rem;
 	}
@@ -156,13 +492,120 @@ body.page-page-edit .field-label {
 		width: 100%;
 	}
 	
+	body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widget {
+		margin: 0 1rem 1rem 0;
+	}	
+	
+	body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widget.views-widget-filter-title {
+		display: block;
+	}
+	
 	body.page-project .view-documents-by-taxonomy .views-row {
 		margin: 0 3% 2% 0;
 		width: 46%;
 	}
 	
+	body.page-project .view-documents-by-taxonomy .views-row:nth-child(3n+1) {
+		clear: none;
+	}
+	
+	body.page-project .view-documents-by-taxonomy .views-row:nth-child(2n+1) {
+		clear: left;
+	}
+	
+	body.page-project .view-documents-by-taxonomy .views-row .views-field-title a {
+		font-size: .625rem;
+	}
+
+	body.page-project .view-documents-by-taxonomy .views-row .views-field-field-pages-completed {
+		font-size: .75rem;
+	}
+	
+	body.node-type-transcipt-document .details {
+		padding-bottom: .5rem;
+		font-size: .75rem;
+	}
+	
 	body.node-type-transcipt-document .view-transcript-page-view .item-list li{
 		margin: 2% 2% 0 0;
-		width: 29%;
+		width: 46%;
+	}
+	
+	body.node-type-transcipt-document .view-transcript-page-view .item-list li .page-number a{
+		padding: .3rem;
+		font-size: .75rem;
+	}
+
+	body.node-type-transcipt-document .view-transcript-page-view .item-list li .status{
+		padding: 0 .3rem .3rem .3rem;
+		font-size: .75rem;
+	}
+	
+	body.page-page-view .panels-flexible-column-project-item-10 {
+		float: none;
+		width: 100%
+	}
+	
+	body.page-page-view .panels-flexible-column-project-item-11 {
+		float: none;
+		margin-top: 1rem;
+		width: 100%
+	}
+	
+	body.page-page-view .project-item .panels-flexible-column-inside {
+		padding: 0;
+	}
+	
+	body.page-page-view .viewer {
+		height: 20rem !important;
+	}
+	
+	body.page-page-view .field-name-field-transcription .field-label {
+		padding: .5rem;
+		font-size: .75rem;
+	}
+
+	body.page-page-view .field-name-field-transcription .field-items {
+		padding: .5rem;
+		font-size: .625rem;
+	}
+
+	body.page-page-view  .field-name-field-page-completed {
+		margin-top: .5rem;
+		font-size: .625rem;
+	}
+	
+	body.page-page-edit .panels-flexible-column-project-item-10 {
+		float: none;
+		width: 100%
+	}
+	
+	body.page-page-edit .panels-flexible-column-project-item-11 {
+		float: none;
+		margin-top: 1rem;
+		width: 100%
+	}
+	
+	body.page-page-edit .project-item .panels-flexible-column-inside {
+		padding: 0;
+	}
+	
+	body.page-page-edit .viewer {
+		height: 20rem !important;
+	}
+	
+	body.page-page-edit .field-name-field-transcription .field-label {
+		padding: .5rem;
+		font-size: .75rem;
+	}
+
+	body.page-page-edit .field-name-field-transcription .field-items {
+		padding: .5rem;
+		font-size: .625rem;
+	}
+
+	body.page-page-edit  .field-name-field-page-completed {
+		margin-top: .5rem;
+		font-size: .625rem;
 	}
 }

@@ -623,4 +623,24 @@
 	.easy-breadcrumb  {
 		display: none;
 	}
+	
+	.item-list .pager {
+		padding-top: 1rem;
+	}
+	
+	.item-list .pager li {
+		font-size: .625rem;
+	}
+	
+	.pager li a {
+		padding: 0 .5rem;
+		height: 1.5rem;
+		line-height: 1.5rem;
+	}
+	
+	.item-list .pager li.pager-current {
+		padding: 0 .5rem;
+		height: 1.5rem;
+		line-height: 1.5rem;
+	}
 }
