@@ -62,7 +62,6 @@ input[type="text"], input[type="password"] {
 	background: #e9e6ed;
 	color: #000;
 	text-indent: 1rem;
-	text-transform: uppercase;
 	font-weight: bold;
 }
 
