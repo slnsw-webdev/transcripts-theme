@@ -19,12 +19,14 @@ strong {
 input {
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	font-size: .75rem;
+	max-width: 100%;
 }
 
 select {
 	box-sizing: content-box;
 	border: 0;
 	padding: 0;
+	max-width: 100%;
 	height: 2.5rem;
 	line-height: 2.5rem;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -42,14 +44,17 @@ input[type="submit"] {
 	box-sizing: content-box;
 	cursor: pointer;
 	border: 0;
-	padding: 0 2rem;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	background: #e9e6ed;
-	color: #000;
+	background-color: #0059be;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 0.8rem 0.5rem;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover {
+	background-color: #00cc99;
 }
 
 input[type="text"], input[type="password"] {
@@ -96,10 +101,17 @@ label {
 }
 
 .button {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	font-size: .875rem;
-	color: #fff;
 	background-color: #0059be;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 0.8rem 0.5rem;
+    text-decoration: none;
+}
+
+.button:hover {
+	background-color: #00cc99;
 }
 
 .inner-wrapper {
@@ -133,6 +145,10 @@ label {
 
 .wysiwyg a {
 	color: #0059be;
+}
+
+.wysiwyg a.button {
+	color: #fff;
 }
 
 .smallish {

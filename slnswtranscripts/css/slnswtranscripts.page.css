@@ -40,6 +40,10 @@ body.front .join-us a {
 	border-radius: 5px;
 }
 
+body.front .join-us a:hover {
+	background-color: #00cc99;
+}
+
 body.front .view-project-list {
 	border-width: 1px 0;
 	border-style: solid;
@@ -136,8 +140,8 @@ body.page-project .view-documents-by-taxonomy .view-filters .views-exposed-widge
 }
 
 body.page-project .view-documents-by-taxonomy .views-row {
-	float: left;
-	margin: 0 3% 1% 0;
+	display: inline-block;
+	margin: 0 2% 1% 0;
 	border: 1px solid #d8d8d8;
 	width: 30%;
 }
@@ -328,9 +332,6 @@ body.page-page-edit .wysiwyg-toggle-wrapper a {
 
 body.page-page-edit input[type="submit"] {
 	float: right;
-	background: #0059be;
-	color: #fff;
-	font-weight: bold;
 }
 
 body.page-user-register label {
@@ -360,6 +361,10 @@ body.page-user .profile .field-label, body.page-user .profile  h3 {
 body.page-user .profile  a {
 	color: #0059be;
 	text-decoration: none;
+}
+
+body.page-user #edit-cancel {
+	margin-left: 1rem;
 }
 
 body.page-messages  table th {

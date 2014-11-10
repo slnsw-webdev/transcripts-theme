@@ -484,6 +484,13 @@
 	position: static;
 }
 
+.form-item .description {
+	margin-top: .5rem;
+	font-size: 1rem;
+	font-style: italic;
+	line-height: 1.4rem;
+}
+
 #page-wrapper #page-canvas > header ul.menu {
 	float: right;
 	margin: .7rem 1rem;
