@@ -480,6 +480,10 @@
 
 /* Styles for markup used on some pages *******************************
 ***********************************************************************/
+.contextual-links-region {
+	position: static;
+}
+
 #page-wrapper #page-canvas > header ul.menu {
 	float: right;
 	margin: .7rem 1rem;
