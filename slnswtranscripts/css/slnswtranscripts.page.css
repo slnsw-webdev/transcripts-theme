@@ -511,7 +511,7 @@ body.page-search .pane-page-content  a {
 	
 	body.page-project .view-documents-by-taxonomy .views-row {
 		margin: 0 3% 2% 0;
-		width: 46%;
+		width: 45%;
 	}
 	
 	body.page-project .view-documents-by-taxonomy .views-row:nth-child(3n+1) {
