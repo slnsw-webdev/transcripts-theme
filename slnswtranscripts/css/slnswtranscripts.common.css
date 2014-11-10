@@ -491,6 +491,41 @@
 	line-height: 1.4rem;
 }
 
+.iviewer_common {
+	border: none !important;
+}
+
+.iviewer_zoom_in {
+	background: url("/sites/all/themes/slnswtranscripts/images/icon-zoom-in.svg") no-repeat center center !important;
+}
+
+.iviewer_zoom_out {
+	background: url("/sites/all/themes/slnswtranscripts/images/icon-zoom-out.svg") no-repeat center center !important;
+}
+
+.iviewer_zoom_zero {
+	background: url("/sites/all/themes/slnswtranscripts/images/icon-1to1.svg") no-repeat center center !important;
+}
+
+.iviewer_zoom_fit{
+	background: url("/sites/all/themes/slnswtranscripts/images/icon-full-screen.svg") no-repeat center center !important;
+}
+
+.iviewer_zoom_status {
+	background: transparent !important;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+	font-size: 1rem !important;
+	font-weight: bold !important;
+}
+
+.iviewer_rotate_left {
+	background: url("/sites/all/themes/slnswtranscripts/images/icon-rotate-left.svg") no-repeat center center !important;
+}
+
+.iviewer_rotate_right {
+	background: url("/sites/all/themes/slnswtranscripts/images/icon-rotate-right.svg") no-repeat center center !important;
+}
+
 #page-wrapper #page-canvas > header ul.menu {
 	float: right;
 	margin: .7rem 1rem;

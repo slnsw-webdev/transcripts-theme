@@ -298,6 +298,10 @@ body.page-page-edit .field-name-field-transcription label {
 	background-color: #000;
 }
 
+body.page-page-edit #transcriptmenu a {
+	text-decoration: none;
+}
+
 body.page-page-edit .field-name-field-transcription .field-items {
 	padding: 1rem;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
