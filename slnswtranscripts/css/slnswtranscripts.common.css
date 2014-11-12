@@ -149,7 +149,7 @@
 
 #page-wrapper #page-canvas > header {
 	height: 6.125rem;
-	background: url(../images/banner-transcription.jpg) left top no-repeat;
+	background: url(../images/banner-transcription.jpg?v=1) left top no-repeat;
 	background-size: cover;
 }
 
@@ -258,12 +258,14 @@
 .contact-us {
 	width: 100%;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: right;
 }
 
 .contact-us .col1 {
-	float: left;
-	margin-right: 4%;
-	width: 52%;
+	display: inline-block;
+	margin-right: 1.5rem;
+	text-align: left;
+	vertical-align: bottom;
 }
 
 .contact-us .col1  h1 {
@@ -273,11 +275,10 @@
 	font-style: italic;
 }
 
-.contact-us .col1 a {
+.contact-us .col1 a.contact-button {
 	display: block;
 	margin-top: 1.2rem;
-	padding: 0 10%;
-	width: 80%;
+	width: 13rem;
 	height: 4.125rem;
 	line-height: 4.125rem;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -295,15 +296,19 @@
 }
 
 .contact-us .col2 {
-	float: right;
-	padding-top: 2.5rem;
-	width: 44%;
+	display: inline-block;
 	font-size: .8125rem;
 	line-height: 1.2;
+	text-align: left;
+	vertical-align: bottom;
 }
 
 .contact-us .col2 p {
 	margin-bottom: 1rem;
+}
+
+.contact-us .col2 p.media-enquiries {
+	margin-bottom: 0;
 }
 
 .contact-us .col2 a {
@@ -397,18 +402,6 @@
 		line-height: 2.25rem;
 	}
 
-	.contact-us .col1 {
-		float: none;
-		margin: 0;
-		width: 100%;
-	}
-
-	.contact-us .col2 {
-		float: none;
-		margin: 0;
-		width: 100%;
-	}
-	
 	.staff-pick {
 		padding: 1rem 0;
 	}
@@ -427,6 +420,18 @@
 	
 	.contact-us {
 		padding: 1rem 0;
+	}
+	
+	.contact-us .col1 {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+
+	.contact-us .col2 {
+		float: none;
+		margin: 0;
+		width: 100%;
 	}
 	
 	.contact-us .col1 h1 {

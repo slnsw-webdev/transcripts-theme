@@ -1,6 +1,5 @@
 /* styles specific to slnswtranscripts-1col layout ************************
 ****************************************************************/
-
 .panel-slnswtranscripts-1col-header {
 	width: 100%;
 	position: relative;
@@ -32,15 +31,9 @@
 	background-color: #f9f9f9;
 }
 
-.panel-slnswtranscripts-1col-contact-strip-col-1 {
-	float: left;
-	width: 48%;
-}
-
-.panel-slnswtranscripts-1col-contact-strip-col-2 {
+.panel-slnswtranscripts-1col-contact-strip-col {
 	float: right;
-	width: 40%;
-	max-width: 28rem;
+	width: 100%;
 }
 
 .panel-slnswtranscripts-1col-footer {
@@ -78,14 +71,7 @@
 		width: 100%;
 	}
 
-	.panel-slnswtranscripts-1col-contact-strip-col-1 {
-		float: none;
-		margin: 0 auto;
-		border-bottom: 1px solid #d8d8d8;
-		width: 94%;
-	}
-
-	.panel-slnswtranscripts-1col-contact-strip-col-2 {
+	.panel-slnswtranscripts-1col-contact-strip-col {
 		float: none;
 		margin: 0 auto;
 		width: 94%;

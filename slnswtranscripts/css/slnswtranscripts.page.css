@@ -225,6 +225,18 @@ body.node-type-transcipt-document .view-transcript-page-view .item-list li .stat
 	text-transform: uppercase;
 }
 
+body.page-page-view .panel-slnswtranscripts-1col-title-strip h1 {
+	max-width: 98% !important;
+}
+
+body.page-page-view .panel-slnswtranscripts-1col-main {
+	max-width: 98% !important;
+}
+
+body.page-page-view .easy-breadcrumb {
+	max-width: 98% !important;
+}
+
 body.page-page-view .page-number {
 	font-size: 1.125rem;
 	font-weight: bold;
