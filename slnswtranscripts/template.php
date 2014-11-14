@@ -37,6 +37,32 @@ function slnswtranscripts_menu_link__main_menu(array $variables) {
   }
 }
 
+// modify user menu, add username 
+function slnswtranscripts_menu_link__user_menu(array $variables) {
+  $element = $variables['element'];
+  
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  
+  if ($element['#original_link']['link_path'] == 'user') {
+    global $user;
+    $element['#title'] = user_is_logged_in() ? t($user->name) : t('User account');
+  }
+  
+  if ($element['#original_link']['link_path'] == 'user/register') {
+    global $user;
+    if (user_is_logged_in()) {
+      return '';
+    }
+  }
+  
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+
 // clean up body field output
 function slnswtranscripts_field__body($variables) {
   $output = '';
@@ -50,4 +76,22 @@ function slnswtranscripts_field__body($variables) {
   $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
 
   return $output;
+}
+
+// alt text for images
+function slnswtranscripts_image($variables) {
+  $attributes = $variables['attributes'];
+  $attributes['src'] = file_create_url($variables['path']);
+
+  foreach (array('width', 'height', 'alt', 'title') as $key) {
+    if (isset($variables[$key])) {
+      $attributes[$key] = $variables[$key];
+    }
+  }
+  
+  if (!isset($attributes['alt'])) {
+    $attributes['alt'] = '';
+  }
+
+  return '<img' . drupal_attributes($attributes) . ' />';
 }

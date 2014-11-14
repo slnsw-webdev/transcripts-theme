@@ -154,12 +154,13 @@
 }
 
 #page-wrapper #page-canvas  #main-menu-trigger {
+	display: none;
 	float: left;
 	padding: 0 1rem;
-	background-color: #000;
+	background-color: #fff;
 	height: 3.5rem;
 	line-height: 3.5rem;
-	color: #fff;
+	color: #000;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	font-size: .875rem;
 	text-decoration: none;
@@ -181,7 +182,7 @@
 	padding: 0 1rem;
 	font-family: Georgia,Times,Times New Roman,serif;
 	font-size: 1.5rem;
-	background-color: #fff;
+	background-color: #000;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -193,7 +194,7 @@
 	display: block;
 	height: 3.5rem;
 	line-height: 3.5rem;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	-o-transition:.5s;
 	-ms-transition:.5s;
@@ -208,6 +209,34 @@
 
 #page-wrapper #page-canvas > header h1:hover a {
 	color: #fff;
+}
+
+#page-wrapper #page-canvas > header #desktop-search {
+	float: left;
+	padding: 0 1rem;
+	width: 15.5rem;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	background-color: #fff;
+}
+
+#page-wrapper #page-canvas > header #desktop-search input[type="text"] {
+	border: 1px solid #b7b7b7;
+	padding: 0;
+	width: 12rem;
+	height: 2rem;
+	font-style: italic;
+	background: #fff;
+	color: #1e1e1e;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+#page-wrapper #page-canvas > header #desktop-search input[type="image"] {
+	width: 1.8rem;
+	height: auto !important;
+	margin-right: 1rem;
+	vertical-align: middle;
 }
 
 .staff-pick {
@@ -348,6 +377,10 @@
 }
 
 @media all and (max-width: 78em) {
+	#page-wrapper #page-canvas  #main-menu-trigger {
+		display: block;
+	}
+	
 	.staff-pick  .col1 {
 		margin-right: 2%;
 		width: 40%;
@@ -485,6 +518,12 @@
 
 /* Styles for markup used on some pages *******************************
 ***********************************************************************/
+.ui-resizable-e {
+	right: -10px;
+	width: 20px;
+	background: #e9e9e9 url("/sites/all/themes/slnswtranscripts/images/grip.png") no-repeat center center;
+}
+
 .contextual-links-region {
 	position: static;
 }
@@ -534,27 +573,48 @@
 #page-wrapper #page-canvas > header ul.menu {
 	float: right;
 	margin: .7rem 1rem;
-	padding: 0 .5rem;
 	background-color: #f9f9f9;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	line-height: 2rem;
+	height: 2rem;
 	list-style-type: none;
 }
 
 #page-wrapper #page-canvas > header ul.menu li {
-	display: inline;
+	display: inline-block;
 	margin: 0;
-	padding: 0 .5rem;
+	padding: 0;
 	list-style-type: none;
+	height: 2rem;
 }
 
 #page-wrapper #page-canvas > header ul.menu a {
+	display: block;
+	padding: 0 .5rem;
+	height: 2rem;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	color: #1e1e1e;
 	font-size: .875rem;
 	text-decoration: none;
+}
+
+#page-wrapper #page-canvas > header .help {
+	float: right;
+	margin: .7rem 0;
+	padding: 0 .5rem;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	color: #1e1e1e;
+	font-size: .875rem;
+	text-decoration: none;
+	color: #fff;
+	background-color: #fb3333;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 2rem;
 }
 
 .easy-breadcrumb {

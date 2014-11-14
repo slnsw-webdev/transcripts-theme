@@ -150,6 +150,11 @@ label {
 	color: #fff;
 }
 
+.panels-flexible-column-inside {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
 .smallish {
 	display: none;
 }

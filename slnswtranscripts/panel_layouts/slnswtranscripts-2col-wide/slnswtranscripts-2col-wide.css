@@ -1,0 +1,17 @@
+/* styles specific to slnswtranscripts-2col-wide layout ************************
+****************************************************************/
+.panel-slnswtranscripts-2col-wide-top-row {
+	width: 100%;
+}
+
+.panel-slnswtranscripts-2col-wide-left-col {
+	float: left;
+	margin: 1.75rem 0;
+	width: 49%
+}
+
+.panel-slnswtranscripts-2col-wide-right-col {
+	float: right;
+	margin: 1.75rem 0;
+	width: 49%
+}
